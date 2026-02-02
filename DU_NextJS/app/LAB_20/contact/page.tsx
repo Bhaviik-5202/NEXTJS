@@ -1,7 +1,9 @@
 export default function ContactPage() {
   return (
     <>
-      <h1>Hello From Contact Page</h1>
+      <div className="lab20-content">
+        <h1>Hello From Contact Page</h1>
+        </div>
     </>
   );
 }

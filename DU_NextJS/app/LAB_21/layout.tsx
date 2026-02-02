@@ -12,6 +12,7 @@ export default function Lab21Layout({ children }: { children: ReactNode }) {
 
   const navLinks = [
     { href: "/LAB_21", label: "Home" },
+    { href : "/LAB_21/About", label: "About" },
     { href: "/LAB_21/template1", label: "Template 1" },
     { href: "/LAB_21/template2", label: "Template 2" },
     { href: "/LAB_21/template3", label: "Template 3" },

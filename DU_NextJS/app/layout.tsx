@@ -31,12 +31,13 @@ export default function RootLayout({
         <nav
           style={{
             padding: "1rem",
-            backgroundColor: "#333",
+            backgroundColor: "#333333",
             color: "white",
             display: "flex",
             gap: "1.5rem",
             alignItems: "center",
             flexWrap: "wrap",
+            textDecoration : "capitalize"
           }}
         >
           <Link
