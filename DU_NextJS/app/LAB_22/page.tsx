@@ -20,10 +20,10 @@ export default function Lab22Home() {
                             <Link className="lab22-link" style={{ color: "#0ea5e9" }} href="/LAB_22/dynamic/123">Dynamic Route</Link>
                         </li>
                         <li className="lab22-list-item">
-                            <Link className="lab22-link" style={{ color: "#a21caf" }} href="/LAB_22/dynamic/primes/1/10">Prime Numbers</Link>
+                            <Link className="lab22-link" style={{ color: "#daff05" }} href="/LAB_22/dynamic/primes/1/10">Prime Numbers</Link>
                         </li>
                         <li className="lab22-list-item">
-                            <Link className="lab22-link" style={{ color: "#f43f5e" }} href="/LAB_22/dynamic/records/3">Pagination</Link>
+                            <Link className="lab22-link" style={{ color: "#1cdfe2" }} href="/LAB_22/dynamic/page/3">Pagination</Link>
                         </li>
                     </ul>
                 </nav>

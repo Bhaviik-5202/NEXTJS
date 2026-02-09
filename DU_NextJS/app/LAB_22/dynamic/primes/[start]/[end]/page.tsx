@@ -9,7 +9,9 @@ function isPrime(num: number) {
     return true;
 }
 
-export default async function PrimeNumbersPage({ params }: { params: { start: string; end: string } }) {
+export default async function PrimeNumbersPage(
+    { params }: { params: { start: string; end: string } }
+) {
     // Await the params promise
     const { start, end } = await params;
     const startNum = parseInt(start);
@@ -27,9 +29,9 @@ export default async function PrimeNumbersPage({ params }: { params: { start: st
         <div style={
             {
                 padding: '20px',
-                color: '#333',
+                color: '#000000',
                 fontFamily: 'Arial, sans-serif',
-                backgroundColor: '#a21caf',
+                backgroundColor: '#daff05',
                 borderRadius: '10px',
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
             }
