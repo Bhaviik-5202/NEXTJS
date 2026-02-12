@@ -1,10 +1,11 @@
-import "../styles/template2.css";
+import React from 'react';
+import '../styles/template2.css';
 
 export default function Template2Page() {
   return (
     <div className="template2-container">
       <div className="template2-header">
-        <h2>Template 2: Colorful & Vibrant</h2>
+        <h2 className='template-h'>Template 2: Colorful & Vibrant</h2>
         <p>A dynamic and engaging design with vibrant colors</p>
       </div>
 

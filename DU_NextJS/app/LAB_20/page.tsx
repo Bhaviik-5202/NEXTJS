@@ -1,7 +1,7 @@
 export default function LAB20Home() {
   return (
     <>
-      <div className="lab20-content">
+      <div className="content">
         <h1>LAB 20 Home Page</h1>
       </div>
     </>

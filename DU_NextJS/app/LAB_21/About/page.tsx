@@ -1,6 +1,9 @@
+import React from 'react';
+import '../styles/about.css';
+
 export default function AboutPage() {
   return (
-    <div className="lab21-content">
+    <div className="content">
       <h2>About LAB 21</h2>
       <p>
         LAB 21 focuses on translating real-world HTML/CSS templates into a NextJS application while keeping the

@@ -28,12 +28,12 @@ export default async function PrimeNumbersPage(
     return (
         <div style={
             {
-                padding: '20px',
-                color: '#000000',
-                fontFamily: 'Arial, sans-serif',
-                backgroundColor: '#daff05',
-                borderRadius: '10px',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+                color: "#f43f5e",
+                border: "3px solid #7c2d12",
+                background: "#fef2f2",
+                padding: '2rem',
+                borderRadius: '8px',
+                fontFamily: 'Arial, sans-serif'
             }
         }>
             <p>Start: {startNum}</p>

@@ -49,13 +49,12 @@ async function Page({
     return (
         <div style={
             {
-                color: '#000000',
-                backgroundColor: '#1cdfe2',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '20vh'
+                color: "#f43f5e",
+                border: "3px solid #7c2d12",
+                background: "#fef2f2",
+                padding: '2rem',
+                borderRadius: '8px',
+                fontFamily: 'Arial, sans-serif'
             }
         }>
             <h1>Starting Index: {startingIndex}</h1>

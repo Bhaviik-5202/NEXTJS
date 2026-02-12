@@ -1,0 +1,60 @@
+.lab23-container {
+	max-width: 500px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.lab23-form, .lab23-edit-form {
+	display: flex;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+.lab23-form input, .lab23-edit-form input {
+	flex: 1;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.lab23-form button, .lab23-edit-form button {
+	padding: 0.5rem 1rem;
+	border: none;
+	background: #0070f3;
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.lab23-form button:hover, .lab23-edit-form button:hover {
+	background: #005bb5;
+}
+.lab23-list {
+	list-style: none;
+	padding: 0;
+}
+.lab23-list-item {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: 0.5rem;
+	background: #fff;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+.lab23-list-item button {
+	background: #e00;
+	color: #fff;
+	border-radius: 4px;
+	padding: 0.25rem 0.75rem;
+	margin-left: 0.5rem;
+}
+.lab23-list-item button:hover {
+	background: #a00;
+}
+.lab23-error {
+	color: #e00;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}

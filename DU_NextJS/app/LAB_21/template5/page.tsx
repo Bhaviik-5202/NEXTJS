@@ -1,4 +1,5 @@
-import "../styles/template5.css";
+import React from 'react';
+import '../styles/template5.css';
 
 export default function Template5Page() {
 	return (
@@ -6,7 +7,7 @@ export default function Template5Page() {
 			<header className="template5-hero">
 				<div className="hero-left">
 					<p className="hero-tag">Dark Tech UI</p>
-					<h2>Template 5: Neon Interface</h2>
+					<h2 className='template-h'>Template 5: Neon Interface</h2>
 					<p className="hero-subtitle">
 						A futuristic layout with glass panels, neon accents, and bold typography.
 					</p>

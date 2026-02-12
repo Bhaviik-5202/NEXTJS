@@ -1,10 +1,11 @@
-import "../styles/template1.css";
+import React from 'react';
+import '../styles/template1.css';
 
 export default function Template1Page() {
   return (
     <div className="template1-container">
       <div className="template1-hero">
-        <h2>Template 1: Modern Minimalist</h2>
+        <h2 className='template-h'>Template 1: Modern Minimalist</h2>
         <p>A clean and elegant design with minimalist approach</p>
       </div>
 

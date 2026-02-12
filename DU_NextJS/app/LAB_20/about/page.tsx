@@ -1,7 +1,7 @@
 export default function AboutPage() {
   return (
     <>
-      <div className="lab20-content">
+      <div className="content">
       <h1>Hello From About Page</h1>
       </div>
     </>

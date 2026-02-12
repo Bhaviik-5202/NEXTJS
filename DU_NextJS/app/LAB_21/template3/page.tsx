@@ -1,11 +1,13 @@
-import "../styles/template3.css";
+import React from 'react';
+import '../styles/template3.css';
+
 
 export default function Template3Page() {
   return (
     <div className="template3-container">
       <div className="template3-header">
         <div className="header-overlay">
-          <h2>Template 3: Corporate Professional</h2>
+          <h2 className='template-h'>Template 3: Corporate Professional</h2>
           <p>A formal and business-oriented design template</p>
         </div>
       </div>

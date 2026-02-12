@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ReactNode } from "react";
-import "./styles/layout.css";
+import "./styles.css";
 
 export default function Lab20Layout({ children }: { children: ReactNode }) {
   const navLinks = [
@@ -12,14 +12,12 @@ export default function Lab20Layout({ children }: { children: ReactNode }) {
   ];
 
   return (
-    <div className="lab20-container">
-      <header className="lab20-header">
-        <div className="header-content">
-          <h1>LAB 20 : Basic Routing and Navigation</h1>
-        </div>
+    <>
+      <header className="header">
+        <h1>LAB 20 : Basic Routing and Navigation</h1>
       </header>
 
-      <nav className="lab20-nav">
+      <nav className="nav">
         <ul className="nav-list">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -31,11 +29,11 @@ export default function Lab20Layout({ children }: { children: ReactNode }) {
         </ul>
       </nav>
 
-      <main className="lab20-main">{children}</main>
+      <main className="main">{children}</main>
 
-      <footer className="lab20-footer">
+      <footer className="footer">
         <p>© 2026 LAB 20 Next.js Lab Exercise</p>
       </footer>
-    </div>
+    </>
   );
 }

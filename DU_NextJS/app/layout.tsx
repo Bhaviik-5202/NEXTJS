@@ -28,18 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav
-          style={{
-            padding: "1rem",
-            backgroundColor: "#333333",
-            color: "white",
-            display: "flex",
-            gap: "1.5rem",
-            alignItems: "center",
-            flexWrap: "wrap",
-            textDecoration : "capitalize"
-          }}
-        >
+        <nav className="navbar">
           <Link
             href="/"
             style={{

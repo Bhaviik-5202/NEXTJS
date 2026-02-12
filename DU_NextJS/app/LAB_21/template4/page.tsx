@@ -1,11 +1,12 @@
-import "../styles/template4.css";
+import React from 'react';
+import '../styles/template4.css';
 
 export default function Template4Page() {
 	return (
 		<div className="template4-container">
 			<header className="template4-hero">
 				<div className="hero-content">
-					<h2>Template 4: Eco & Nature</h2>
+					<h2 className='template-h'>Template 4: Eco & Nature</h2>
 					<p>Soft gradients, natural tones, and calm typography.</p>
 				</div>
 				<div className="hero-badge">Sustainable UI</div>

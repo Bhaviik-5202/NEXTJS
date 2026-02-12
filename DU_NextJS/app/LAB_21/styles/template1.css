@@ -1,5 +1,4 @@
 /* Template 1: Modern Minimalist CSS */
-
 .template1-container {
   width: 100%;
 }
@@ -121,6 +120,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
