@@ -124,19 +124,9 @@ export default function LAB23Home() {
   };
 
   return (
+    <>
     <div className="lab23-container" aria-label="Student CRUD Demo">
       <h1>LAB 23 Home Page</h1>
-      <section style={{ marginTop: '2rem' }}>
-        <h2>Student API Usage</h2>
-        <ul>
-          <li>GET <b>/LAB_23/user</b> - List all students</li>
-          <li>POST <b>/LAB_23/user</b> - Add a student (body: {'{"name":"YourName"}'})</li>
-          <li>GET <b>/LAB_23/user/[id]</b> - Get student by ID</li>
-          <li>PUT <b>/LAB_23/user/[id]</b> - Update student (body: {'{"name":"NewName"}'})</li>
-          <li>DELETE <b>/LAB_23/user/[id]</b> - Delete student</li>
-        </ul>
-        <p style={{ marginTop: '1rem' }}>Try these endpoints using Postman or browser for GET requests.</p>
-      </section>
       <section style={{ marginTop: '2rem' }}>
         <h2>Live Student List</h2>
         {error && <div className="lab23-error" role="alert">{error}</div>}
@@ -186,5 +176,19 @@ export default function LAB23Home() {
         </ul>
       </section>
     </div>
+    <div>
+            <section style={{ marginTop: '2rem' }}>
+        <h2>Student API Usage</h2>
+        <ul>
+          <li>GET <b>/LAB_23/user</b> - List all students</li>
+          <li>POST <b>/LAB_23/user</b> - Add a student (body: {'{"name":"YourName"}'})</li>
+          <li>GET <b>/LAB_23/user/[id]</b> - Get student by ID</li>
+          <li>PUT <b>/LAB_23/user/[id]</b> - Update student (body: {'{"name":"NewName"}'})</li>
+          <li>DELETE <b>/LAB_23/user/[id]</b> - Delete student</li>
+        </ul>
+        <p style={{ marginTop: '1rem' }}>Try these endpoints using Postman or browser for GET requests.</p>
+      </section>
+    </div>
+    </>
   );
 }
