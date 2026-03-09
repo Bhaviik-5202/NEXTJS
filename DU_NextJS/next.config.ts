@@ -28,9 +28,30 @@ const nextConfig = {
     ],
   },
 
-  experimental: {
-    serverActions: true,
+  async headers() {
+    return [
+      {
+        source: '/LAB_24/:path*',
+        headers: [
+          {
+            key: 'x-lab',
+            value: 'lab-24',
+          },
+        ],
+      },
+    ];
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/LAB_24/configuration',
+        destination: '/LAB_24/config',
+        permanent: false,
+      },
+    ];
+  },
+
 };
 
 export default nextConfig;
