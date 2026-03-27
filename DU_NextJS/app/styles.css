@@ -1,24 +1,22 @@
 /* Layout structure */
 body {
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f7f7f7;
-    color: #222;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
 }
 
 .header {
     width: 100%;
-    background: linear-gradient(90deg, #222 50%, #4e54c8 100%);
+    background: #1e293b;
     color: #fff;
-    padding: 1.5rem 2.5rem;
-    box-shadow: 0 4px 16px rgba(78, 84, 200, 0.08);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
-    height: 100px;
 }
 
 .navbar {

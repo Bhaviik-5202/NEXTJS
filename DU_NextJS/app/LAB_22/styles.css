@@ -1,1 +1,63 @@
-/* LAB_22 specific styles */
+/* LAB_22 Consolidated Styles */
+
+/* Auth Layout */
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #f4f7f6;
+}
+.auth-card {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Admin Layout */
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+.admin-sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+.admin-sidebar ul { list-style: none; padding: 0; }
+.admin-sidebar li { padding: 10px 0; border-bottom: 1px solid #34495e; }
+
+.admin-main {
+    flex: 1;
+    background: #ecf0f1;
+}
+.admin-header {
+    background: white;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.admin-content {
+    padding: 20px;
+}
+
+/* Client Layout */
+.client-container {
+    font-family: sans-serif;
+}
+.client-nav {
+    background: #3498db;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.client-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo { font-weight: bold; font-size: 1.5rem; }

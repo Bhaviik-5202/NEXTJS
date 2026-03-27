@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
+import Link from "next/link";
 
 type Student = { id: number; name: string };
 
@@ -166,7 +167,9 @@ export default function LAB23Home() {
                 </form>
               ) : (
                 <>
-                  <span>{s.name}</span>
+                  <Link href={`/LAB_23/students/${s.id}`}>
+                    <span style={{ cursor: 'pointer', color: 'blue', textDecoration: 'underline' }}>{s.name}</span>
+                  </Link>
                   <button onClick={() => startEdit(s)} disabled={loading} aria-label={`Edit ${s.name}`}>Edit</button>
                   <button onClick={() => handleDelete(s.id)} disabled={loading} aria-label={`Delete ${s.name}`}>Delete</button>
                 </>
@@ -187,6 +190,11 @@ export default function LAB23Home() {
           <li>DELETE <b>/LAB_23/user/[id]</b> - Delete student</li>
         </ul>
         <p style={{ marginTop: '1rem' }}>Try these endpoints using Postman or browser for GET requests.</p>
+      </section>
+      <section style={{ marginTop: "2rem", padding: "1rem", background: "#f0f9ff", borderRadius: "8px" }}>
+        <h3>Intercepting Routes Demo</h3>
+        <p>Click on a student's name in the list above. It will open their details in a <b>modal</b> (Intercepted route <code>(.)students/[id]</code>).</p>
+        <p>If you <b>refresh</b> that modal or visit the URL directly, it will load the <b>full page</b> (<code>students/[id]</code>).</p>
       </section>
     </div>
     </>

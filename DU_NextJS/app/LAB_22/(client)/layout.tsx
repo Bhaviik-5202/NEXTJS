@@ -3,8 +3,13 @@ import "../styles.css";
 
 export default function ClientLayout({ children }: { children: ReactNode }) {
     return (
-        <div>
-            {children}
+        <div className="client-container">
+            <nav className="client-nav">
+                <div className="logo">Client Portal</div>
+            </nav>
+            <main className="client-content">
+                {children}
+            </main>
         </div>
     );
 }

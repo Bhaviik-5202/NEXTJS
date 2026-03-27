@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="navbar">
+        <nav className="navbar" style={{ padding: '0.5rem 1rem', background: '#333', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <Link
             href="/"
             style={{
@@ -39,42 +39,15 @@ export default function RootLayout({
           >
             Home
           </Link>
-          <Link
-            href="/LAB_20"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Lab 20
-          </Link>
-          <Link
-            href="/LAB_21"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Lab 21
-          </Link>
-          <Link
-            href="/LAB_22"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Lab 22
-          </Link>
-          <Link
-            href="/LAB_23"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Lab 23
-          </Link>
-          <Link
-            href="/LAB_24"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Lab 24
-          </Link>
-          <Link
-            href="/LAB_25"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Lab 25
-          </Link>
+          {[20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30].map(n => (
+            <Link
+              key={n}
+              href={`/LAB_${n}`}
+              style={{ color: "white", textDecoration: "none", fontSize: '0.9rem' }}
+            >
+              Lab {n}
+            </Link>
+          ))}
         </nav>
         {children}
       </body>

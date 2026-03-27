@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// In a real lab, you'd use mysql, postgresql or mongodb here.
+// For demonstration and local development without a running DB,
+// sqlite is easiest to set up.
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  UserID   Int    @id @default(autoincrement())
+  UserName String @unique
+  Password String
+  tasks    Task[]
+}
+
+model Task {
+  TaskID          Int     @id @default(autoincrement())
+  TaskTitle       String
+  TaskDescription String?
+  IsCompleted     Boolean @default(false)
+  UserID          Int
+  user            User    @relation(fields: [UserID], references: [UserID])
+}
